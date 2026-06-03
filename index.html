@@ -3,122 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | Your Name</title>
-    <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./plugins/font-awesome/css/all.min.css">
+    <title>Resume | Lowkey</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body class="bg-dark text-light">
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Sidebar -->
-            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse bg-secondary-custom">
-                <div class="position-sticky pt-3 text-center">
-                    <div class="profile-img mb-3">
-                        <img src="./assets/images/square.jpg" class="rounded-circle img-fluid" alt="Profile" style="width: 120px;">
+<body>
+    <div class="resume-wrapper">
+        <!-- PAGE 1 -->
+        <div class="page">
+            <header>
+                <h1>First Last</h1>
+                <p class="subtitle">Software Engineer</p>
+                <div class="contact-info">
+                    <span>user@example.com</span> &bull;
+                    <span>github.com/username</span> &bull;
+                    <span>+1 234 567 890</span>
+                </div>
+            </header>
+
+            <section>
+                <h2>about</h2>
+                <p>Minimalist software engineer with a passion for clean code and aesthetic, functional interfaces. Experienced in crafting robust systems and lowkey designs tailored for modern performance standards.</p>
+            </section>
+
+            <section>
+                <h2>experience</h2>
+                <div class="item">
+                    <div class="item-header">
+                        <h3>Senior Developer</h3>
+                        <span class="date">2022 - Present</span>
                     </div>
-                    <h5 class="fw-bold">YOUR NAME</h5>
-                    <p class="text-muted small">Profession / Title</p>
-                    <ul class="nav flex-column mt-4 text-start ps-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#about">
-                                <i class="fas fa-user me-2"></i> About
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experience">
-                                <i class="fas fa-briefcase me-2"></i> Experience
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education">
-                                <i class="fas fa-graduation-cap me-2"></i> Education
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">
-                                <i class="fas fa-code me-2"></i> Skills
-                            </a>
-                        </li>
+                    <p class="company">Tech Corp | Remote</p>
+                    <ul>
+                        <li>Architected scalable microservices using Go and Node.js.</li>
+                        <li>Reduced latency by 40% through aggressive caching strategies.</li>
+                        <li>Mentored a team of 5 junior developers, emphasizing clean architecture.</li>
                     </ul>
-                    <div class="social-links mt-5">
-                        <a href="#" class="text-light me-2"><i class="fab fa-github"></i></a>
-                        <a href="#" class="text-light me-2"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <h3>Software Engineer</h3>
+                        <span class="date">2019 - 2022</span>
+                    </div>
+                    <p class="company">Innovate LLC | New York, NY</p>
+                    <ul>
+                        <li>Developed responsive web applications using React and TypeScript.</li>
+                        <li>Integrated CI/CD pipelines to streamline deployment.</li>
+                        <li>Collaborated closely with the design team to implement pixel-perfect UIs.</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <h3>Junior Web Developer</h3>
+                        <span class="date">2018 - 2019</span>
+                    </div>
+                    <p class="company">Creative Studio | San Francisco, CA</p>
+                    <ul>
+                        <li>Built and maintained client websites using HTML, CSS, and vanilla JS.</li>
+                        <li>Optimized web assets to improve page load speed by 25%.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- PAGE 2 -->
+        <div class="page">
+            <section>
+                <h2>education</h2>
+                <div class="item">
+                    <div class="item-header">
+                        <h3>B.S. in Computer Science</h3>
+                        <span class="date">2014 - 2018</span>
+                    </div>
+                    <p class="company">University of Technology</p>
+                    <ul>
+                        <li>Graduated with Honors (GPA: 3.8/4.0).</li>
+                        <li>Specialized in Systems Architecture and UI/UX Design.</li>
+                        <li>Led the university Linux User Group.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>skills</h2>
+                <div class="skills">
+                    <div class="skill-category">
+                        <h4>Languages</h4>
+                        <p>JavaScript, TypeScript, Go, Python, HTML/CSS, Rust</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Frameworks & Libraries</h4>
+                        <p>React, Node.js, Express, Vue, TailwindCSS, Next.js</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Tools & Systems</h4>
+                        <p>Git, Docker, Kubernetes, Linux (Arch/Debian), Neovim, Bash</p>
                     </div>
                 </div>
-            </nav>
+            </section>
 
-            <!-- Main Content -->
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pt-5">
-                <section id="about" class="mb-5">
-                    <h2 class="border-bottom pb-2 mb-4">About Me</h2>
-                    <p class="lead">Write a brief, professional summary about yourself here. Keep it concise and impactful.</p>
-                </section>
-
-                <section id="experience" class="mb-5">
-                    <h2 class="border-bottom pb-2 mb-4">Experience</h2>
-                    <div class="experience-item mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h4 class="mb-0">Job Title</h4>
-                            <span class="text-muted small">Date - Date</span>
-                        </div>
-                        <p class="text-info-custom mb-1">Company Name</p>
-                        <p>Brief description of your responsibilities and achievements in this role.</p>
+            <section>
+                <h2>projects</h2>
+                <div class="item">
+                    <div class="item-header">
+                        <h3>Lowkey CLI</h3>
+                        <span class="date">2023</span>
                     </div>
-                    <div class="experience-item mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h4 class="mb-0">Job Title</h4>
-                            <span class="text-muted small">Date - Date</span>
-                        </div>
-                        <p class="text-info-custom mb-1">Company Name</p>
-                        <p>Brief description of your responsibilities and achievements in this role.</p>
+                    <p>A minimalist command-line tool for managing dotfiles, written in Go. Featured in multiple Linux customization communities for its simplicity and speed.</p>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <h3>Archcraft Theme Port</h3>
+                        <span class="date">2022</span>
                     </div>
-                </section>
-
-                <section id="education" class="mb-5">
-                    <h2 class="border-bottom pb-2 mb-4">Education</h2>
-                    <div class="education-item mb-3">
-                        <div class="d-flex justify-content-between">
-                            <h4 class="mb-0">Degree / Qualification</h4>
-                            <span class="text-muted small">Graduation Year</span>
-                        </div>
-                        <p class="text-info-custom mb-0">Institution Name</p>
+                    <p>Ported the default Archcraft Openbox theme to various web frameworks, ensuring a consistent dark and lowkey aesthetic across different platforms.</p>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <h3>Terminal Portfolio</h3>
+                        <span class="date">2021</span>
                     </div>
-                </section>
-
-                <section id="skills" class="mb-5">
-                    <h2 class="border-bottom pb-2 mb-4">Skills</h2>
-                    <div class="row">
-                        <div class="col-md-4 mb-3">
-                            <h5>Technical Skills</h5>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-info-custom me-2"></i> Skill One</li>
-                                <li><i class="fas fa-check text-info-custom me-2"></i> Skill Two</li>
-                                <li><i class="fas fa-check text-info-custom me-2"></i> Skill Three</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <h5>Soft Skills</h5>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-info-custom me-2"></i> Communication</li>
-                                <li><i class="fas fa-check text-info-custom me-2"></i> Teamwork</li>
-                                <li><i class="fas fa-check text-info-custom me-2"></i> Leadership</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <footer class="pt-5 pb-4 text-center text-muted border-top">
-                    <p class="small">&copy; 2024 Your Name. All rights reserved.</p>
-                </footer>
-            </main>
+                    <p>An interactive, terminal-inspired portfolio website built with React and xterm.js, offering a unique command-line interface for visitors.</p>
+                </div>
+            </section>
         </div>
     </div>
-
-    <script src="./plugins/jQuery/jquery-3.6.4.min.js"></script>
-    <script src="./plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/scripts.js"></script>
 </body>
 </html>
